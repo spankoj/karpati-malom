@@ -51,13 +51,13 @@ img {
   color: #fff;
   background: #28a745;
   border: none;
-  border-radius: 5px;
+  /* border-radius: 5px;
   padding: 10px 30px;
-  cursor: pointer;
-}
+  cursor: pointer; */
+/* }
 .btn:hover {
   opacity: 0.9;
-}
+} */
 .btn-primary,
 .bg-primary {
   color: #fff;
