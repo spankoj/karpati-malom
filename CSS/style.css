@@ -55,6 +55,10 @@ img {
   padding: 10px 30px;
   cursor: pointer;
 }
+.btn2{
+  color: #fff;
+  background: #28a745;
+}
 .btn:hover {
   opacity: 0.9;
 }
