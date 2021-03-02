@@ -264,14 +264,19 @@
                 <input class="btn" type="submit" value="Send" />
               </form>
 
-              <form name="contact" method="POST" data-netlify="true">
-                <p>
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                class="callback-form"
+              >
+                <p class="form-control">
                   <label>Your Name: <input type="text" name="name" /></label>
                 </p>
-                <p>
+                <p class="form-control">
                   <label>Your Email: <input type="email" name="email" /></label>
                 </p>
-                <p>
+                <p class="form-control">
                   <label
                     >Your Role:
                     <select name="role[]" multiple>
@@ -280,10 +285,10 @@
                     </select></label
                   >
                 </p>
-                <p>
+                <p class="form-control">
                   <label>Message: <textarea name="message"></textarea></label>
                 </p>
-                <p>
+                <p class="form-control">
                   <button type="submit">Send</button>
                 </p>
               </form>
