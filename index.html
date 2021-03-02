@@ -237,15 +237,15 @@
           <div class="column">
             <div class="column-2 bg-light">
               <h2>Érdeklődöm</h2>
-              <form action="" class="callback-form">
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                class="callback-form"
+              >
                 <div class="form-control">
                   <label for="name"></label>
-                  <input
-                    id="name"
-                    type="text"
-                    name="Enter name"
-                    placeholder="Név"
-                  />
+                  <input id="name" type="text" name="name" placeholder="Név" />
                 </div>
                 <div class="form-control">
                   <label for="email"></label>
