@@ -58,6 +58,18 @@ img {
 .btn:hover{
   opacity: 0.9;
 }
+.btn2 {
+  display: inline-block;
+  color: #fff;
+  background: #28a745;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.btn2:hover{
+  opacity: 0.9;
+}
 .btn-primary,
 .bg-primary {
   color: #fff;
