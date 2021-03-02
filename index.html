@@ -258,7 +258,7 @@
                     ><input type="text" name="phone" placeholder="Telefon szám"
                   /></label>
                 </div>
-                <input class="btn2" type="submit" value="Send" />
+                <input class="btn" type="submit" value="Send" />
               </form>
             </div>
           </div>
@@ -304,19 +304,19 @@
       }
     };
 
-    // Smooth Scrolling
-    $('#navbar a, .btn').on('click', function (e) {
-      if (this.hash !== '') {
-        e.preventDefault();
+    // // Smooth Scrolling
+    // $('#navbar a, .btn').on('click', function (e) {
+    //   if (this.hash !== '') {
+    //     e.preventDefault();
 
-        const hash = this.hash;
-        $('html, body').animate(
-          {
-            scrollTop: $(hash).offset().top - 100,
-          },
-          800,
-        );
-      }
-    });
+    //     const hash = this.hash;
+    //     $('html, body').animate(
+    //       {
+    //         scrollTop: $(hash).offset().top - 100,
+    //       },
+    //       800,
+    //     );
+    //   }
+    // });
   </script>
 </html>

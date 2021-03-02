@@ -46,7 +46,7 @@ img {
   color: #0284d0;
 }
 /* Button */
-.btn2 {
+.btn {
   display: inline-block;
   color: #fff;
   background: #28a745;
@@ -55,7 +55,7 @@ img {
   padding: 10px 30px;
   cursor: pointer;
 }
-.btn2:hover{
+.btn:hover{
   opacity: 0.9;
 }
 .btn-primary,
