@@ -10,8 +10,7 @@
 }
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
 }
 
@@ -237,7 +236,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
 }
 .hero * {
   z-index: 10;
@@ -326,7 +325,7 @@ img {
 .footer .social > * {
   margin-right: 30px;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     height: 120px;
@@ -350,4 +349,4 @@ img {
   .team img {
     width: 70%;
   }
-}
+} */
