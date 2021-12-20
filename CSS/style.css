@@ -207,9 +207,7 @@ img {
   background: url(../img/index/malomkovon_at_edited.jpg) no-repeat center
     center/cover;
   height: 100vh;
-  /* background-position: ; */
   color: #fff;
-  /* Relative? */
   position: relative;
 }
 .hero .content {
