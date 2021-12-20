@@ -1,7 +1,7 @@
 :root {
   /* Logoból szedtem ki */
   --primary-color: #009040;
-  --secondary-color: #0193de;
+  --secondary-color: #009432;
   --terciary-color: #ab5524;
   /* tutorial feladatokból szedtem*/
   --light-color: #f3f3f3;
@@ -38,16 +38,16 @@ img {
 /* ------------Utility Classes------------- */
 /* ------------Text colors---------------- */
 .text-primary {
-  color: #28a745;
+  color: var(--primary-color);
 }
 .text-secondary {
-  color: #0284d0;
+  color: var(--secondary-color);
 }
 /* --------------Button-------------- */
 .btn {
   display: inline-block;
   color: #fff;
-  background: #28a745;
+  background: var(--primary-color);
   border: none;
   border-radius: 5px;
   padding: 10px 30px;
@@ -59,7 +59,7 @@ img {
 .btn2 {
   display: inline-block;
   color: #fff;
-  background: #28a745;
+  background: var(--primary-color);
   border: none;
   border-radius: 5px;
   padding: 10px 30px;
@@ -71,12 +71,12 @@ img {
 .btn-primary,
 .bg-primary {
   color: #fff;
-  background-color: #28a745;
+  background-color: var(--primary-color);
 }
 .btn-secondary,
 .bg-secondary {
   color: #fff;
-  background-color: #0284d0;
+  background-color: var(--secondary-color);
 }
 .btn-dark,
 .bg-dark {
@@ -101,6 +101,9 @@ img {
   height: 100%;
 }
 .flex-items > div {
+  padding: 20px;
+}
+.flex-items > i {
   padding: 20px;
 }
 /* ------------Flex columns------------------ */
@@ -152,8 +155,8 @@ img {
   align-items: center;
 }
 .section-header h2 {
-  font-size: 40px;
-  margin: 20px 0;
+  font-size: 30px;
+  margin: 10px 0;
 }
 .section-padding {
   padding: 20px 20px 40px;
@@ -183,6 +186,7 @@ img {
   position: fixed;
   top: 0px;
   transition: 0.5s;
+  z-index: 20;
 }
 .navbar.top {
   background: transparent;
@@ -257,7 +261,7 @@ img {
   margin-bottom: 15px;
 }
 .icons i {
-  background-color: #28a745;
+  background-color: var(--secondary-color);
   color: #fff;
   padding: 1rem;
   border-radius: 50%;
@@ -302,20 +306,29 @@ img {
   color: #fff;
 }
 .footer a:hover {
-  color: #28a745;
+  color: var(--primary-color);
 }
 .footer .social > * {
   margin-right: 30px;
 }
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    height: 120px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
     padding: 20px;
+    z-index: 20;
+  }
+  .navbar ul {
+    display: inline-block;
   }
   .navbar a {
     padding: 10px 10px;
     margin: 0 3px;
+  }
+  .navbar .logo {
+    width: 50px;
   }
   .flex-items {
     flex-direction: column;

@@ -2,37 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="kárpáti,erdei,vízimalom,malom,waldmühle,wandorf,sopron,bánfalva,sopronbánfalva"
+    />
+    <meta
+      name="description"
+      content="A sopronbánfalvi Kárpáti vízimalom története"
+    />
     <title>A malom története</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <!-- <link
-      rel="stylesheet"
-      media="screen and (max-width: 768px)"
-      href="./CSS/mobile.css"
-    /> -->
+      /> -->
+    <script
+      src="https://kit.fontawesome.com/9293fdebd8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body id="home">
     <header class="hero history">
       <div id="navbar" class="navbar top">
-        <img
-          class="logo"
-          src="./img/index/malom_logo_crop.png"
-          alt="Kárpáti malom logoja"
-        />
-        <h1>Kárpáti Malom</h1>
+        <a href="#home"
+          ><img
+            class="logo"
+            src="./img/index/malom_logo_crop.png"
+            alt="Kárpáti malom logoja"
+        /></a>
         <nav>
           <ul>
-            <li><a href="index.html">Kezdő lap</a></li>
-            <li><a href="index.html#services">Szolgáltatások</a></li>
             <li><a href="index.html#history">A malom története</a></li>
-            <li><a href="index.html#gallery">Galéria</a></li>
+            <li><a href="index.html#services">Szolgáltatások</a></li>
             <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#gallery">Galéria</a></li>
             <li><a href="index.html#team">Csapat</a></li>
             <li><a href="index.html#contact">Kapcsolat</a></li>
           </ul>
@@ -113,7 +126,7 @@
         </p>
       </section>
     </main>
-
+    <!--------------------- Footer -------------------->
     <footer class="footer bg-dark">
       <div class="social">
         <a href="https://www.facebook.com/karpatimalom"
@@ -127,7 +140,7 @@
       <p>Készítette: Spanyol János</p>
       <p>Forrás kód: Udemy kurzus - Brad Traversy</p>
     </footer>
-
+    <!----------------------- JQuery ---------------------->
     <script>
       const navbar = document.getElementById('navbar');
       let scrolled = false;
