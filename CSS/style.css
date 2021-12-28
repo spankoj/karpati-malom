@@ -252,10 +252,7 @@ img {
     center/cover;
   height: 25vh;
 }
-.hero.film {
-  /* background: url(../img/blog/blog.jpg) no-repeat center center/cover; */
-  height: 25vh;
-}
+
 /* --------------Icons---------------- */
 .icons {
   padding: 30px;
