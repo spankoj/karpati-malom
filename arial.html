@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="kárpáti,erdei,vízimalom,malom,waldmühle,wandorf,sopron,bánfalva,sopronbánfalva"
+    />
+    <meta
+      name="description"
+      content="A sopronbánfalvi Kárpáti vízimalom története"
+    />
+    <title>A malom története</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+      /> -->
+    <script
+      src="https://kit.fontawesome.com/9293fdebd8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-F7BB6E4J93"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-F7BB6E4J93');
+    </script>
+  </head>
+
+  <body id="home">
+    <header class="hero history">
+      <div id="navbar" class="navbar top">
+        <a href="index.html#home"
+          ><img
+            class="logo"
+            src="./img/index/malom_logo_crop.png"
+            alt="Kárpáti malom logoja"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="index.html#history">A malom története</a></li>
+            <li><a href="index.html#services">Szolgáltatások</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#gallery">Galéria</a></li>
+            <li><a href="index.html#team">Csapat</a></li>
+            <li><a href="index.html#contact">Kapcsolat</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <!-- <h1>History</h1> -->
+      </div>
+    </header>
+
+    <main>
+      <section class="post">
+        <!-- <h2>A Kárpáti malom rövid története</h2>
+        <p class="meta">
+          <i class="fas fa-user"></i> Írta:
+          <strong>dr. Kárpáti György</strong> | 2021.11.15
+        </p>
+        <img src="./img/tagok/doki.jpg" alt="dr. Kárpáti György" /> -->
+        <div id="dla_lf_161048"></div>
+        <script
+          src="https://www.fentrol.hu/hu/legifoto/embed/161048"
+          async
+        ></script>
+        <a href="history.html" class="btn btn-dark">
+          <i class="fas fa-chavron"></i>Vissza</a
+        >
+      </section>
+    </main>
+    <!--------------------- Footer -------------------->
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="https://www.facebook.com/karpatimalom"
+          ><i class="fab fa-facebook fa-2x"></i
+        ></a>
+        <a href="https://www.youtube.com/channel/UCU4RmgAm98q3sJNATrxHLCA"
+          ><i class="fab fa-youtube fa-2x"></i
+        ></a>
+      </div>
+      <p>Copyright &copy; 2021 - Kárpáti Malom.</p>
+      <p>Minden jog fenntartva.</p>
+      <p>Készítette: Spanyol János</p>
+      <p>Forrás kód: Brad Traversy</p>
+    </footer>
+    <!----------------------- JQuery ---------------------->
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function () {
+            navbar.style.transform = 'translateY(0px)';
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
